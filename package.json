@@ -1,5 +1,6 @@
 {
     "name": "ng-frontend",
+    "description": "Frontend do NG.CASH (desafio fictício)",
     "version": "0.1.0",
     "private": true,
     "scripts": {
