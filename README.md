@@ -19,7 +19,7 @@
 ## Rodando localmente ▶
 
 > Nesse projeto é usado apenas o Yarn como gerenciador de pacotes. Veja o website oficial do Yarn [aqui](https://yarnpkg.com/).
-Clone o projeto
+> Clone o projeto
 
 ```bash
   git clone https://github.com/allbertuu/ng-frontend
@@ -42,6 +42,7 @@ Rode o servidor
 ```bash
   yarn dev
 ```
+
 > Irá rodar na porta `3000` do `localhost`
 
 Rodar testes (React-testing-library) (**ATUALIZAÇÃO FUTURA**)
@@ -72,16 +73,16 @@ Rodar testes (React-testing-library) (**ATUALIZAÇÃO FUTURA**)
 ## Regras de negócio para estruturação da _interface visual_ 📑
 
 <details>
-<summary>Clique aqui para expandir</summary>  
+<summary>Clique aqui para expandir</summary>
 
-- [x] Página para realizar o cadastro na NG informando _username_ e _password._  
-- [x] Página para realizar o login informando _username_ e _password._  
-- [-] Com o usuário logado, a página principal deve apresentar:  
-  - [-] _balance_ atual do usuário;  
-  - [-] Seção voltada à realização de transferências para outros usuários NG a partir do _username_ de quem sofrerá o _cash-in_;  
-  - [-] Tabela com os detalhes de todas as transações que o usuário participou;  
-  - [-] Mecanismo para filtrar a tabela por data de transação e/ou transações do tipo _cash-in_/_cash-out_;  
-  - [x] Botão para realizar o _log-out._  
+-   [x] Página para realizar o cadastro na NG informando _username_ e _password._
+-   [x] Página para realizar o login informando _username_ e _password._
+-   [-] Com o usuário logado, a página principal deve apresentar:
+    -   [-] _balance_ atual do usuário;
+    -   [-] Seção voltada à realização de transferências para outros usuários NG a partir do _username_ de quem sofrerá o _cash-in_;
+    -   [-] Tabela com os detalhes de todas as transações que o usuário participou;
+    -   [-] Mecanismo para filtrar a tabela por data de transação e/ou transações do tipo _cash-in_/_cash-out_;
+    -   [x] Botão para realizar o _log-out._
 
 </details>
 
