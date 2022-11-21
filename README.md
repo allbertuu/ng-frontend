@@ -66,6 +66,8 @@ Rodar testes (React-testing-library) (**ATUALIZAÇÃO FUTURA**)
 -   Rotas protegidas no NextJS, usando Server-side-rendering (getServerSideProps)
 -   Validação com Yup em um formulário Formik
 -   Formik para desenvolver um formulário inteligente e fácil
+-   HeadlessUI como biblioteca de componentes
+-   Meu machado do Thor no Frontend: TailwindCSS. Para simplesmente criar as melhores páginas da web. Só isso :)
 -   Phosphor icons para ícones
 
 #### E por fim: Páginas/ladings pages de Cadastro e Login bonitas, modernas, responsivas, e com meu toque especial.
