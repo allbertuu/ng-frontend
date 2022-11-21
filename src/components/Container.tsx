@@ -1,25 +1,25 @@
-import { FunctionComponent, HTMLAttributes, ReactNode } from "react";
-import { classNames } from "../utils";
+import { FunctionComponent, HTMLAttributes, ReactNode } from 'react';
+import { classNames } from '../utils';
 
 interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
-  children: ReactNode;
+    children: ReactNode;
 }
 
 const Container: FunctionComponent<ContainerProps> = ({
-  children,
-  ...props
+    children,
+    ...props
 }) => {
-  return (
-    <div
-      {...props}
-      className={classNames(
-        props.className ? props.className : "",
-        "container px-4 mx-auto"
-      )}
-    >
-      {children}
-    </div>
-  );
+    return (
+        <div
+            {...props}
+            className={classNames(
+                props.className ? props.className : '',
+                'container px-4 mx-auto'
+            )}
+        >
+            {children}
+        </div>
+    );
 };
 
 export default Container;
