@@ -87,7 +87,7 @@ const Form: FunctionComponent<FormProps> = ({ type: formType, ...props }) => {
                             <label
                                 htmlFor="username"
                                 className="block text-slate-400/80 absolute left-2 bottom-1.5 tracking-wide
-                                semibold"
+                                semibold cursor-pointer"
                             >
                                 Nome de usuário
                             </label>
@@ -129,7 +129,7 @@ const Form: FunctionComponent<FormProps> = ({ type: formType, ...props }) => {
                             <label
                                 htmlFor="password"
                                 className="block text-slate-400/80 absolute left-2 bottom-1.5 tracking-wide
-                                semibold"
+                                semibold cursor-pointer"
                             >
                                 Sua senha
                             </label>
