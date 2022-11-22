@@ -143,8 +143,8 @@ const Header: FunctionComponent<HeaderProps> = () => {
                                             <Menu.Item>
                                                 {({ active }) => (
                                                     <a
-                                                    href="#"
-                                                    onClick={signOut}
+                                                        href="#"
+                                                        onClick={signOut}
                                                         className={classNames(
                                                             active
                                                                 ? 'bg-red-500 text-white'
