@@ -71,7 +71,7 @@ Rodar testes (React-testing-library) (**ATUALIZAÇÃO FUTURA**)
 -   Meu machado do Thor no Frontend: TailwindCSS. Para simplesmente criar as melhores páginas da web. Só isso :)
 -   Phosphor icons para ícones
 
-#### E por fim: Páginas/ladings pages de Cadastro e Login bonitas, modernas, responsivas, e com meu toque especial.
+#### E por fim: Páginas/landings pages de Cadastro e Login bonitas, modernas, responsivas, e com meu toque especial.
 
 ## Regras de negócio para estruturação da _interface visual_ 📑
 
