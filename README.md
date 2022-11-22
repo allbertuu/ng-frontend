@@ -19,7 +19,8 @@
 ## Rodando localmente ▶
 
 > Nesse projeto é usado apenas o Yarn como gerenciador de pacotes. Veja o website oficial do Yarn [aqui](https://yarnpkg.com/).
-> Clone o projeto
+
+Clone o projeto
 
 ```bash
   git clone https://github.com/allbertuu/ng-frontend
