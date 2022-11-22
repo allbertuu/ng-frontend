@@ -1,6 +1,6 @@
 import { AxiosError } from 'axios';
 import { useRouter } from 'next/router';
-import { setCookie } from 'nookies';
+import { setCookie, destroyCookie } from 'nookies';
 import { createContext, ReactNode, useState } from 'react';
 import api from '../services/api';
 
@@ -17,6 +17,7 @@ interface ISignInCredentials extends IUser {}
 
 interface IAuthContext {
     signIn(credentials: ISignInCredentials): Promise<void>;
+    signOut(): void;
     isAuthenticated: boolean;
     user: IUser | null;
 }
@@ -52,8 +53,15 @@ export function AuthProvider({ children }: IAuthProvider) {
         return p;
     };
 
+    const signOut = () => {
+        destroyCookie(undefined, 'ngbackend.token');
+        router.push('/');
+    };
+
     return (
-        <AuthContext.Provider value={{ signIn, isAuthenticated, user }}>
+        <AuthContext.Provider
+            value={{ signIn, signOut, isAuthenticated }}
+        >
             {children}
         </AuthContext.Provider>
     );

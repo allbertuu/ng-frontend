@@ -7,10 +7,13 @@ import {
     SmileyWink as AvatarIcon,
 } from 'phosphor-react';
 import { classNames } from '../utils';
+import useAuth from '../hooks/useAuth';
 
 interface HeaderProps {}
 
 const Header: FunctionComponent<HeaderProps> = () => {
+    const { signOut } = useAuth();
+
     const navigation = [
         { name: 'Tela inicial', href: '/home', current: true },
         { name: 'Transações', href: '/transactions', current: false },
@@ -140,7 +143,8 @@ const Header: FunctionComponent<HeaderProps> = () => {
                                             <Menu.Item>
                                                 {({ active }) => (
                                                     <a
-                                                        href="#"
+                                                    href="#"
+                                                    onClick={signOut}
                                                         className={classNames(
                                                             active
                                                                 ? 'bg-red-500 text-white'
