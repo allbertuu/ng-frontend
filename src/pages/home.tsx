@@ -1,16 +1,16 @@
-import { GetServerSideProps } from 'next';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { parseCookies } from 'nookies';
 import { Container } from 'react-bootstrap';
 import Header from '../components/Header';
-import useAuth from '../hooks/useAuth';
+import { IUserAccount } from '../contexts/AuthContext';
+import api from '../services/api';
 import styles from '../styles/pages/Home.module.scss';
+import withSSRAuth from '../utils/withSSRAuth';
 
-export default function Home() {
-    const { user } = useAuth();
-    const router = useRouter();
+interface HomeProps {
+    user: IUserAccount;
+}
 
+export default function Home({ user }: HomeProps) {
     return (
         <>
             <Head>
@@ -20,7 +20,7 @@ export default function Home() {
             <Header />
 
             <Container>
-                <main className={styles.main}>Olá {user?.username}</main>
+                <main className={styles.main}>Olá {user.balance}</main>
             </Container>
 
             <footer className={styles.footer}></footer>
@@ -28,19 +28,13 @@ export default function Home() {
     );
 }
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-    const cookies = parseCookies(ctx);
-
-    if (!cookies['ngbackend.token']) {
-        return {
-            redirect: {
-                destination: '/',
-                permanent: false,
-            },
-        };
-    }
+export const getServerSideProps = withSSRAuth(async (ctx) => {
+    // pegar informações da conta do usuário na API e retornar para página
+    const res = await api.get('account');
+    const { id, balance } = res.data;
+    const user: IUserAccount = { accountId: id, balance };
 
     return {
-        props: {},
+        props: { user },
     };
-};
+});
