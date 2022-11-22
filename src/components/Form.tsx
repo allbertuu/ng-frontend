@@ -37,7 +37,7 @@ const Form: FunctionComponent<FormProps> = ({ type: formType, ...props }) => {
         } else if (formType === 'signup') {
             await api
                 .post('/user', data)
-                .then((res) => signIn(data))
+                .then(() => signIn(data))
                 .catch((err: any) => setError(err.response?.data));
         } else {
             throw new Error(
