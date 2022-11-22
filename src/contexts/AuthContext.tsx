@@ -46,7 +46,7 @@ export function AuthProvider({ children }: IAuthProvider) {
                 resolve();
             } catch (e) {
                 const err = e as AxiosError;
-                reject(err.response?.data);
+                reject(err);
             }
         });
         return p;

@@ -33,7 +33,7 @@ const Form: FunctionComponent<FormProps> = ({ type: formType, ...props }) => {
 
     const handleSubmit = async (data: IFormValues) => {
         if (formType === 'signin') {
-            await signIn(data).catch((err: any) => setError(err));
+            await signIn(data).catch((err: any) => setError(err.response?.data));
         } else if (formType === 'signup') {
             await api
                 .post('/user', data)
