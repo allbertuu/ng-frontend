@@ -19,7 +19,8 @@
 ## Rodando localmente ▶
 
 > Nesse projeto é usado apenas o Yarn como gerenciador de pacotes. Veja o website oficial do Yarn [aqui](https://yarnpkg.com/).
-> Clone o projeto
+
+Clone o projeto
 
 ```bash
   git clone https://github.com/allbertuu/ng-frontend
@@ -70,7 +71,7 @@ Rodar testes (React-testing-library) (**ATUALIZAÇÃO FUTURA**)
 -   Meu machado do Thor no Frontend: TailwindCSS. Para simplesmente criar as melhores páginas da web. Só isso :)
 -   Phosphor icons para ícones
 
-#### E por fim: Páginas/ladings pages de Cadastro e Login bonitas, modernas, responsivas, e com meu toque especial.
+#### E por fim: Páginas/landings pages de Cadastro e Login bonitas, modernas, responsivas, e com meu toque especial.
 
 ## Regras de negócio para estruturação da _interface visual_ 📑
 
