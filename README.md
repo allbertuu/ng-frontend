@@ -17,6 +17,7 @@
 🎨 Frontend do NG.CASH (desafio técnico)
 
 ## Screenshot 📸
+
 ![image](https://user-images.githubusercontent.com/89992304/203819017-dca21ad7-1829-4089-8877-131c7deb9599.png)
 
 ## Rodando localmente ▶
