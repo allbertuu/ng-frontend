@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import { FunctionComponent } from 'react';
 import Image from 'next/image';
-import Container from '../components/Container';
+import Container from '@atoms/Container';
 import { GetServerSideProps } from 'next';
 import { parseCookies } from 'nookies';
 import { StarFour } from 'phosphor-react';
-import Form from '../components/Form';
+import Form from '@organisms/Form';
 
 interface LoginProps {}
 

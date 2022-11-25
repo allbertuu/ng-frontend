@@ -1,5 +1,5 @@
 import { FunctionComponent, HTMLAttributes, ReactNode } from 'react';
-import { classNames } from '../utils';
+import classNames from '@utils/classNames';
 
 interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
     children: ReactNode;

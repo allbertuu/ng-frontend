@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import { Container } from 'react-bootstrap';
-import Header from '../components/Header';
-import { IUserAccountData } from '../contexts/AuthContext';
-import api from '../services/api';
-import styles from '../styles/pages/Home.module.scss';
-import withSSRAuth from '../utils/withSSRAuth';
+import { CurrencyDollar } from 'phosphor-react';
+import Header from '@organisms/Header';
+import { IUserAccountData } from '@contexts/AuthContext';
+import api from '@services/api';
+import formatPrice from '@utils/formatPrice';
+import withSSRAuth from '@utils/withSSRAuth';
 
 interface HomeProps {
     userAccount: {

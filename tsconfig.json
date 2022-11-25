@@ -1,5 +1,17 @@
 {
     "compilerOptions": {
+        "baseUrl": "./src/",
+        "paths": {
+            "@styles/*": ["styles/*"],
+            "@atoms/*": ["components/atoms/*"],
+            "@organisms/*": ["components/organisms/*"],
+            "@molecules/*": ["components/molecules/*"],
+            "@contexts/*": ["contexts/*"],
+            "@hooks/*": ["hooks/*"],
+            "@services/*": ["services/*"],
+            "@validations/*": ["validations/*"],
+            "@utils/*": ["utils/*"]
+        },
         "target": "es5",
         "lib": ["dom", "dom.iterable", "esnext"],
         "allowJs": true,
@@ -15,6 +27,6 @@
         "jsx": "preserve",
         "incremental": true
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src"],
     "exclude": ["node_modules"]
 }

@@ -5,17 +5,17 @@ import {
     ErrorMessage,
 } from 'formik';
 import { FunctionComponent, HTMLAttributes, useState } from 'react';
-import useAuth from '../hooks/useAuth';
-import { SignInSchema } from '../validations';
+import useAuth from '@hooks/useAuth';
+import { SignInSchema } from '@validations/index';
 import {
     Eye as EyeOpenIcon,
     EyeClosed as EyeClosedIcon,
     ArrowCircleRight as ArrowCircleRightIcon,
     CircleNotch as LoadingIcon,
 } from 'phosphor-react';
-import api from '../services/api';
-import { classNames } from '../utils';
-import WantToSignInOrSignUp from './WantToSignInOrSignUp';
+import api from '@services/api';
+import classNames from '@utils/classNames';
+import WantToSignInOrSignUp from '@molecules/WantToSignInOrSignUp';
 
 interface FormProps extends HTMLAttributes<HTMLFormElement> {
     type: 'signin' | 'signup';

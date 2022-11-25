@@ -2,7 +2,7 @@ import { AxiosError } from 'axios';
 import { useRouter } from 'next/router';
 import { setCookie, destroyCookie } from 'nookies';
 import { createContext, ReactNode } from 'react';
-import api from '../services/api';
+import api from '@services/api';
 
 interface IAuthProvider {
     children: ReactNode;

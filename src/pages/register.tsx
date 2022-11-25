@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Container from '../components/Container';
-import Form from '../components/Form';
+import Container from '@atoms/Container';
+import Form from '@organisms/Form';
 import { StarFour } from 'phosphor-react';
 
 export default function Register() {

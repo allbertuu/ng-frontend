@@ -6,8 +6,8 @@ import {
     X as CloseIcon,
     SmileyWink as AvatarIcon,
 } from 'phosphor-react';
-import { classNames } from '../utils';
-import useAuth from '../hooks/useAuth';
+import classNames from '@utils/classNames';
+import useAuth from '@hooks/useAuth';
 
 interface HeaderProps {}
 
