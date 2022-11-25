@@ -8,20 +8,32 @@ import {
 } from 'phosphor-react';
 import classNames from '@utils/classNames';
 import useAuth from '@hooks/useAuth';
+import { useRouter } from 'next/router';
 
 interface HeaderProps {}
 
 const Header: FunctionComponent<HeaderProps> = () => {
     const { signOut } = useAuth();
+    const router = useRouter();
+
+    const handleCurrentPage = (url: string) => url === router.route;
 
     const navigation = [
-        { name: 'Tela inicial', href: '/home', current: true },
-        { name: 'Transações', href: '/transactions', current: false },
         {
-            name: 'Realizar transação',
-            href: '/transactions/create',
-            current: false,
+            name: 'Tela inicial',
+            href: '/home',
+            current: handleCurrentPage('/home'),
         },
+        {
+            name: 'Transações',
+            href: '/transactions',
+            current: handleCurrentPage('/transactions'),
+        },
+        // {
+        //     name: 'Realizar transação',
+        //     href: '/transactions/create',
+        //     current: false,
+        // },
     ];
 
     return (
