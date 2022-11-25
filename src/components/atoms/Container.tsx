@@ -14,7 +14,7 @@ const Container: FunctionComponent<ContainerProps> = ({
             {...props}
             className={classNames(
                 props.className ? props.className : '',
-                'container px-4 mx-auto'
+                'container max-w-[1000px] px-4 mx-auto'
             )}
         >
             {children}
