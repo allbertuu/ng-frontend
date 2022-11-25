@@ -1,16 +1,20 @@
 import Head from 'next/head';
 import { Container } from 'react-bootstrap';
 import Header from '../components/Header';
-import { IUserAccount } from '../contexts/AuthContext';
+import { IUserAccountData } from '../contexts/AuthContext';
 import api from '../services/api';
 import styles from '../styles/pages/Home.module.scss';
 import withSSRAuth from '../utils/withSSRAuth';
 
 interface HomeProps {
-    user: IUserAccount;
+    userAccount: {
+        accountId: string;
+        balance: number;
+        username: string;
+    };
 }
 
-export default function Home({ user }: HomeProps) {
+export default function Home({ userAccount }: HomeProps) {
     return (
         <>
             <Head>
@@ -20,7 +24,9 @@ export default function Home({ user }: HomeProps) {
             <Header />
 
             <Container>
-                <main className={styles.main}>Olá {user.balance}</main>
+                <main className={styles.main}>
+                    Olá {userAccount.username}. Sua conta tem {userAccount.balance}
+                </main>
             </Container>
 
             <footer className={styles.footer}></footer>
@@ -31,10 +37,10 @@ export default function Home({ user }: HomeProps) {
 export const getServerSideProps = withSSRAuth(async (ctx) => {
     // pegar informações da conta do usuário na API e retornar para página
     const res = await api.get('account');
-    const { id, balance } = res.data;
-    const user: IUserAccount = { accountId: id, balance };
+    const { id, balance, user } = res.data as IUserAccountData;
+    const userAccount = { accountId: id, balance, username: user.username };
 
     return {
-        props: { user },
+        props: { userAccount },
     };
 });

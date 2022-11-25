@@ -8,9 +8,10 @@ interface IAuthProvider {
     children: ReactNode;
 }
 
-export interface IUserAccount {
-    accountId: string;
+export interface IUserAccountData {
+    id: string;
     balance: number;
+    user: { username: string };
 }
 
 interface ISignInCredentials {
@@ -59,9 +60,7 @@ export function AuthProvider({ children }: IAuthProvider) {
     };
 
     return (
-        <AuthContext.Provider
-            value={{ signIn, signOut }}
-        >
+        <AuthContext.Provider value={{ signIn, signOut }}>
             {children}
         </AuthContext.Provider>
     );
