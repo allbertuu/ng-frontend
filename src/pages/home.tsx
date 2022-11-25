@@ -18,7 +18,7 @@ export default function Home({ userAccount }: HomeProps) {
     return (
         <>
             <Head>
-                <title>Home</title>
+                <title>Tela inicial</title>
             </Head>
 
             <Header />
