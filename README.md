@@ -84,8 +84,8 @@ Rodar testes (React-testing-library) (**ATUALIZAÇÃO FUTURA**)
 
 -   [x] Página para realizar o cadastro na NG informando _username_ e _password._
 -   [x] Página para realizar o login informando _username_ e _password._
--   [-] Com o usuário logado, a página principal deve apresentar:
-    -   [-] _balance_ atual do usuário;
+-   [x] Com o usuário logado, a página principal deve apresentar:
+    -   [x] _balance_ atual do usuário;
     -   [-] Seção voltada à realização de transferências para outros usuários NG a partir do _username_ de quem sofrerá o _cash-in_;
     -   [-] Tabela com os detalhes de todas as transações que o usuário participou;
     -   [-] Mecanismo para filtrar a tabela por data de transação e/ou transações do tipo _cash-in_/_cash-out_;
