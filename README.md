@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://img.shields.io/badge/status-developing-blue" />
+  <img src="https://img.shields.io/badge/status-paused-yellow" />
 </div>
 <div align="center">
   <img src="https://img.shields.io/badge/NextJS-black?&logo=next.js&logoColor=white" />
@@ -58,26 +58,21 @@ Rodar testes (React-testing-library) (**ATUALIZAÇÃO FUTURA**)
 
 ## Stack utilizada ⚙
 
--   TypeScript (para tipagem estática no JS)
+-   NextJS
+-   TypeScript
 -   Autenticação com JWT ([JSON Web Tokens](https://jwt.io/introduction)) no NextJS
--   Criação de contexto de autorização e autenticação (com ContextAPI)
--   Criação de cookies (usando a lib nookies)
--   Manipulação de erros e headers da API do Backend usando Axios
--   Criação do fluxo de autorização (Bearer Token) e autenticação (JWT) no NextJS
--   Criação de CI/CD no GitHub Actions (Prettier para formatação do código)
--   Criação de hooks personalizados
--   Componentização avançada em React
--   Criação de funções utilitárias, e.g. `classNames`
--   Rotas protegidas no NextJS, usando Server-side-rendering (getServerSideProps)
--   Validação com Yup em um formulário Formik
--   Formik para desenvolver um formulário inteligente e fácil
--   HeadlessUI como biblioteca de componentes
--   Meu machado do Thor no Frontend: TailwindCSS. Para simplesmente criar as melhores páginas da web. Só isso :)
--   Phosphor icons para ícones
+-   ContextAPI (para autorização e autenticação no NextJS com SSR)
+-   Nookies
+-   Bearer Token
+-   GitHub Actions
+-   Hooks personalizados
+-   Yup (validação de form)
+-   Formik
+-   HeadlessUI
+-   TailwindCSS
+-   Phosphor icons
 
-#### E por fim: Páginas/landings pages de Cadastro e Login bonitas, modernas, responsivas, e com meu toque especial.
-
-## Regras de negócio para estruturação da _interface visual_ 📑
+## Regras de negócio 📑
 
 <details>
 <summary>Clique aqui para expandir</summary>
@@ -95,15 +90,7 @@ Rodar testes (React-testing-library) (**ATUALIZAÇÃO FUTURA**)
 
 ## Relacionados 🔗
 
-Segue alguns projetos relacionados
-
 [NG Backend](https://github.com/allbertuu/ng-backend)
-
-## Aprendizados 📚
-
-Nesse desafio, enfrentei muitos obstáculos e dificuldades. Nunca tinha me desafiado a construir algo tão grande e com conhecimentos tão abrangentes e interdisciplinares. Busquei fazer um Frontend bonito, interessante, e que possui o que há de mais novo hoje em dia para o Front, do qual me especializo. No momento do envio do desafio faltaram alguns requisitos, mas sigo desenvolvendo a aplicação, pois o Frontend é o meu queridinho. E pode até não ser a coisa mais íncrivel, mas certamente pra mim foi.  
-Claro que, nunca flertei com a desistência, ainda mais quando sei do meu potencial de sucesso, e muito menos seria agora.  
-Em 8 dias aprendi desenvolvendo esse APP sozinho, o que jamais aprendi até aqui (11/22). Aprendi a continuar mesmo em uma situação difícil e arrojada, e melhorei ainda mais meu mindset do que **realmente** é um desenvolvedor. Deixo para você descobrir também, mas saiba que ser proativo e curioso já te deixa bemmm a frente.
 
 ## Feedback 💬
 
