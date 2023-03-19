@@ -3,13 +3,7 @@
 </div>
 <div align="center">
   <img src="https://img.shields.io/badge/NextJS-black?&logo=next.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-%2320232a.svg?&logo=react&logoColor=%2361DAFB" />
   <img src="https://img.shields.io/badge/TypeScript-007ACC?&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Axios-%23000000" />
-  <img src="https://img.shields.io/badge/-Formik-%231d4c78" />
-  <img src="https://img.shields.io/badge/-Yup-%23bf28b3" />
-  <img src="https://img.shields.io/badge/-HeadlessUI-%23437cf7" />
-  <img src="https://img.shields.io/badge/TailwindCSS-%2338B2AC.svg?&logo=tailwind-css&logoColor=white" />
 </div>
 
 # ng-frontend
