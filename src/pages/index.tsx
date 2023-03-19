@@ -1,11 +1,11 @@
-import Head from 'next/head';
 import { FunctionComponent } from 'react';
-import Image from 'next/image';
-import Container from '@atoms/Container';
 import { GetServerSideProps } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
 import { parseCookies } from 'nookies';
-import { StarFour } from 'phosphor-react';
-import Form from '@organisms/Form';
+import { StarFour as StarFourIcon } from 'phosphor-react';
+import { Container } from '@components/layout';
+import { Form } from '@components/index';
 
 interface LoginProps {}
 
@@ -39,7 +39,7 @@ const Login: FunctionComponent<LoginProps> = () => {
                             <h1 className="text-2xl after:block after:bg-purple-500 after:h-[3px] after:w-1/4">
                                 Entrar na sua conta
                             </h1>
-                            <StarFour
+                            <StarFourIcon
                                 size={32}
                                 color="#a855f7"
                                 weight="duotone"

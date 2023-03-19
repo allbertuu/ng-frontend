@@ -4,9 +4,9 @@ import {
     Form as FormikForm,
     ErrorMessage,
 } from 'formik';
-import { FunctionComponent, HTMLAttributes, useState } from 'react';
+import { FunctionComponent, useState } from 'react';
 import useAuth from '@hooks/useAuth';
-import { SignInSchema } from '@validations/index';
+import { SignInSchema } from 'schemas/index';
 import {
     Eye as EyeOpenIcon,
     EyeClosed as EyeClosedIcon,
@@ -15,18 +15,10 @@ import {
 } from 'phosphor-react';
 import api from '@services/api';
 import classNames from '@utils/classNames';
-import WantToSignInOrSignUp from '@molecules/WantToSignInOrSignUp';
+import WantToSignInOrSignUp from 'components/WantToSignInOrSignUp';
+import { IFormProps, IFormValues } from './types';
 
-interface FormProps extends HTMLAttributes<HTMLFormElement> {
-    type: 'signin' | 'signup';
-}
-
-export interface IFormValues {
-    username: string;
-    password: string;
-}
-
-const Form: FunctionComponent<FormProps> = ({ type: formType, ...props }) => {
+const Form: FunctionComponent<IFormProps> = ({ type: formType, ...props }) => {
     const { signIn } = useAuth();
     const [error, setError] = useState<null | any>(null);
     const [inputPasswordType, setInputPasswordType] = useState('password');

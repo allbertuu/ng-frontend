@@ -1,12 +1,11 @@
 import Head from 'next/head';
 import { CurrencyDollar, HeartStraight } from 'phosphor-react';
-import Header from '@organisms/Header';
 import { IUserAccountData } from '@contexts/AuthContext';
 import api from '@services/api';
 import formatPrice from '@utils/formatPrice';
 import withSSRAuth from '@utils/withSSRAuth';
-import Link from '@atoms/Link';
-import Container from '@atoms/Container';
+import { Header, Container } from '@components/layout';
+import { Link } from '@components/ui';
 
 interface IUserAccount {
     accountId: string;

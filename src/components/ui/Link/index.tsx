@@ -1,14 +1,13 @@
 import classNames from '@utils/classNames';
-import { AnchorHTMLAttributes, FunctionComponent } from 'react';
+import { FunctionComponent } from 'react';
+import { ILinkProps } from './types';
 
-interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {}
-
-const Link: FunctionComponent<LinkProps> = ({ children, ...props }) => {
+const Link: FunctionComponent<ILinkProps> = ({ children, ...props }) => {
     return (
         <a
             {...props}
             className={classNames(
-                props.className ? props.className : '',
+                props.className || '',
                 'relative after:transition-all after:duration-700 after:ease-out after:absolute after:left-0 after:block after:w-1/4 hover:after:w-full after:h-[2px] after:bg-purple-500'
             )}
         >

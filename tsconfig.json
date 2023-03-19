@@ -3,9 +3,7 @@
         "baseUrl": "./src/",
         "paths": {
             "@styles/*": ["styles/*"],
-            "@atoms/*": ["components/atoms/*"],
-            "@organisms/*": ["components/organisms/*"],
-            "@molecules/*": ["components/molecules/*"],
+            "@components/*": ["components/*"],
             "@contexts/*": ["contexts/*"],
             "@hooks/*": ["hooks/*"],
             "@services/*": ["services/*"],

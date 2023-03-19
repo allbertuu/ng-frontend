@@ -1,11 +1,8 @@
-import { FunctionComponent, HTMLAttributes, ReactNode } from 'react';
+import { FunctionComponent } from 'react';
 import classNames from '@utils/classNames';
+import { IContainerProps } from './types';
 
-interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
-    children: ReactNode;
-}
-
-const Container: FunctionComponent<ContainerProps> = ({
+const Container: FunctionComponent<IContainerProps> = ({
     children,
     ...props
 }) => {
@@ -13,7 +10,7 @@ const Container: FunctionComponent<ContainerProps> = ({
         <div
             {...props}
             className={classNames(
-                props.className ? props.className : '',
+                props.className || '',
                 'container max-w-[1000px] px-4 mx-auto'
             )}
         >

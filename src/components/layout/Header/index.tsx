@@ -9,10 +9,9 @@ import {
 import classNames from '@utils/classNames';
 import useAuth from '@hooks/useAuth';
 import { useRouter } from 'next/router';
+import { IHeaderProps } from './types';
 
-interface HeaderProps {}
-
-const Header: FunctionComponent<HeaderProps> = () => {
+const Header: FunctionComponent<IHeaderProps> = () => {
     const { signOut } = useAuth();
     const router = useRouter();
 

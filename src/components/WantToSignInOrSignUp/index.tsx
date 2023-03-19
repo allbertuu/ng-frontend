@@ -1,10 +1,6 @@
-import { FunctionComponent, HTMLAttributes } from 'react';
+import { FunctionComponent } from 'react';
 import Link from 'next/link';
-
-interface IWantToSignInOrSignUpProps
-    extends HTMLAttributes<HTMLParagraphElement> {
-    type: 'signin' | 'signup';
-}
+import { IWantToSignInOrSignUpProps } from './types';
 
 const WantToSignInOrSignUp: FunctionComponent<IWantToSignInOrSignUpProps> = ({
     type,
