@@ -4,7 +4,7 @@ import { parseCookies } from 'nookies';
 const cookies = parseCookies();
 
 const api = axios.create({
-    baseURL: 'http://localhost:3333',
+    baseURL: 'https://ng-backend.onrender.com',
     headers: {
         Authorization: `Bearer ${cookies['ngbackend.token']}`,
     },
