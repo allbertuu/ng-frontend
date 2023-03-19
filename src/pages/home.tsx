@@ -65,7 +65,9 @@ export default function Home({ userAccount }: HomeProps) {
                     weight="fill"
                 />
                 <p>por</p>
-                <Link href="https://albertodeveloper.com/">Alberto Santos</Link>
+                <Link href="https://albertodeveloper.com/" target="_blank">
+                    Alberto Santos
+                </Link>
             </footer>
         </>
     );
