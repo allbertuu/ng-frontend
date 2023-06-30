@@ -8,7 +8,9 @@
 
 # ng-frontend
 
-🎨 Frontend do NG.CASH (desafio técnico)
+Aplicação web de frontend para o desafio fullstack da [NG Cash](https://www.ng.cash/). O desafio consiste em criar uma **aplicação Web Banking**, onde o usuário pode se cadastrar e fazer login na plataforma, e após logado, realizar _cash-in_ e _cash-out_ e ver o seu saldo atual.  
+O desafio foi dividido em duas partes: backend e frontend. O backend foi desenvolvido em NodeJS e o frontend em NextJS (React). O backend foi hospedado no Render e o frontend no Vercel.  
+A aplicação pode ser acessada [aqui](https://ng-frontend.vercel.app/).
 
 ## Screenshot 📸
 
